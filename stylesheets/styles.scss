@@ -290,6 +290,9 @@ p {
   .black_section__card__element {
     font-size: 18px;
   }
+  .header:after {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
