@@ -1,0 +1,296 @@
+---
+---
+*{
+  box-sizing: border-box;
+}
+
+$grey-9: #212529;
+
+body {
+  background-color: $grey-9;
+  font-family: spoqahansans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:20px;
+  line-height: 1.6em;
+  color:#727272;
+  font-weight:400;
+  padding: 0;
+  margin: 0;
+  word-break: keep-all;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color:#222;
+  margin:0 0 20px;
+}
+
+p, ul, ol, table, pre, dl {
+  margin:0 0 20px;
+}
+
+h1, h2, h3 {
+  line-height:1.1;
+}
+
+h1 {
+  font-size:28px;
+}
+
+h2 {
+  color:#393939;
+}
+
+h3, h4, h5, h6 {
+  color:#494949;
+}
+
+a {
+  font-weight: bold;
+  color: #ff6b6b;
+  text-decoration:none;
+  transition: all 0.2s ease-out;
+}
+
+a:hover {
+  color:#ffa8a8;
+}
+
+a small {
+  font-size:11px;
+  color:#777;
+  margin-top:-0.3em;
+  display:block;
+}
+
+a:hover small {
+  color:#777;
+}
+
+.wrapper {
+  width:860px;
+  margin:0 auto;
+}
+
+blockquote {
+  border-left:1px solid #e5e5e5;
+  margin:0;
+  padding:0 0 0 20px;
+  font-style:italic;
+}
+
+code, pre {
+  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
+  color:#333;
+  font-size:12px;
+}
+
+pre {
+  padding:8px 15px;
+  background: #f8f8f8;
+  border-radius:5px;
+  border:1px solid #e5e5e5;
+  overflow-x: auto;
+}
+
+table {
+  width:100%;
+  border-collapse:collapse;
+}
+
+th, td {
+  text-align:left;
+  padding:5px 10px;
+  border-bottom:1px solid #e5e5e5;
+}
+
+dt {
+  color:#444;
+  font-weight:700;
+}
+
+th {
+  color:#444;
+}
+
+img {
+  max-width:100%;
+}
+
+header {
+  width:270px;
+  float:left;
+  position:fixed;
+  -webkit-font-smoothing:subpixel-antialiased;
+}
+
+header ul {
+  list-style:none;
+  height:40px;
+  padding:0;
+  background: #f4f4f4;
+  border-radius:5px;
+  border:1px solid #e0e0e0;
+  width:270px;
+}
+
+header li {
+  width:89px;
+  float:left;
+  border-right:1px solid #e0e0e0;
+  height:40px;
+}
+
+header li:first-child a {
+  border-radius:5px 0 0 5px;
+}
+
+header li:last-child a {
+  border-radius:0 5px 5px 0;
+}
+
+header ul a {
+  line-height:1;
+  font-size:11px;
+  color:#999;
+  display:block;
+  text-align:center;
+  padding-top:6px;
+  height:34px;
+}
+
+header ul a:hover {
+  color:#999;
+}
+
+header ul a:active {
+  background-color:#f0f0f0;
+}
+
+strong {
+  color:#222;
+  font-weight:700;
+}
+
+header ul li + li + li {
+  border-right:none;
+  width:89px;
+}
+
+header ul a strong {
+  font-size:14px;
+  display:block;
+  color:#222;
+}
+
+section {
+  width:500px;
+  float:right;
+  padding-bottom:50px;
+}
+
+small {
+  font-size:11px;
+}
+
+hr {
+  border:0;
+  background:#e5e5e5;
+  height:1px;
+  margin:0 0 20px;
+}
+
+footer {
+  width:270px;
+  float:left;
+  position:fixed;
+  bottom:50px;
+  -webkit-font-smoothing:subpixel-antialiased;
+}
+
+.black_section {
+  color: white;
+  background-color: $grey-9;
+  min-height: 100vh;
+  padding: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  webkit-justify-content: center;
+  h2 {
+    color:$grey-9;
+  }
+  z-index: 2;
+}
+
+.black_section__h2_bg {
+  background-color: white;
+  border: 2px solid white;
+}
+
+.white_section {
+  color: $grey-9;
+  background-color: white;
+  min-height: 100vh;
+  padding: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  webkit-justify-content: center;
+  h2 {
+    color:white;
+  }
+}
+
+.white_section__h2_bg {
+  background-color: $grey-9;
+  border: 2px solid $grey-9;
+}
+
+.header:after {
+  z-index: 1;
+  position: fixed;
+  height: 10px;
+  width: 100%;
+  content: '';
+  bottom: -10px;
+  top: 0;
+  display: block;
+  background: $grey-9;
+}
+
+p {
+  max-width: 960px;
+}
+
+.black_section__card__container {
+  margin-top: 60px;
+}
+
+.black_section__card__element {
+  max-width: 960px;
+  border-top: 1px solid white;
+  padding: 28px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 960px) {
+
+}
+
+@media (max-width: 720px) {
+  .white_section, .black_section {
+    padding: 30px;
+    h2 {
+      line-height: 1.4em;
+    }
+  }
+  body {
+    font-size:18px;
+  }
+}
+
+@media (max-width: 480px) {
+
+}
+
+
