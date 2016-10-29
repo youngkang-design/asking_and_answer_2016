@@ -49,7 +49,7 @@ a {
   font-weight: bold;
   color: #ff6b6b;
   text-decoration:none;
-  transition: all 0.2s ease-out;
+  transition: color 0.2s ease-out;
 }
 
 a:hover {
@@ -220,6 +220,11 @@ h4.mt-0 {
   h2 {
     color:$grey-9;
   }
+  .name__link {
+    color: white;
+    border-bottom: 2px solid #ff6b6b;
+    padding-bottom: 2px;
+  }
 }
 
 .black_section__h2_bg {
@@ -239,6 +244,16 @@ h4.mt-0 {
     border-bottom: 2px solid $grey-9;
     color: $grey-9;
   }
+  .name__link {
+    color: #212529;
+    border-bottom: 2px solid #ff6b6b;
+    padding-bottom: 2px;
+  }
+}
+
+.name__link:hover {
+  border-bottom: 2px solid #ffa8a8;
+  transition: border-bottom 0.2s ease-out;
 }
 
 p {
@@ -255,7 +270,6 @@ p {
   font-size: 18px;
   font-weight: bold;
 }
-
 
 @media (max-width: 960px) {
 
