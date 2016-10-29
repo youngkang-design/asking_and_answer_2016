@@ -4,10 +4,13 @@
   box-sizing: border-box;
 }
 
+$grey-3: #dee2e6;
+$grey-6: #868e96;
+$grey-8: #343a40;
 $grey-9: #212529;
 
 body {
-  background-color: $grey-9;
+  background-color: $grey-8;
   font-family: spoqahansans, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size:18px;
   line-height: 1.6em;
@@ -217,13 +220,13 @@ h4.mt-0 {
   background-color: $grey-9;
   padding: 30px;
   width: 100%;
-  h2 {
-    color:$grey-9;
-  }
   .name__link {
     color: white;
     border-bottom: 2px solid #ff6b6b;
     padding-bottom: 2px;
+    &:hover {
+      color: $grey-3;
+    }
   }
 }
 
@@ -233,7 +236,7 @@ h4.mt-0 {
 }
 
 .white_section {
-  color: $grey-9;
+  color: $grey-8;
   background-color: white;
   padding: 30px;
   width: 100%;
@@ -241,19 +244,22 @@ h4.mt-0 {
     color:white;
   }
   h3, h4, h5, h6 {
-    border-bottom: 2px solid $grey-9;
-    color: $grey-9;
+    border-bottom: 2px solid $grey-8;
+    color: $grey-8;
   }
   .name__link {
-    color: #212529;
+    color: $grey-8;
     border-bottom: 2px solid #ff6b6b;
     padding-bottom: 2px;
+    &:hover {
+      color: $grey-6;
+    }
   }
 }
 
 .name__link:hover {
   border-bottom: 2px solid #ffa8a8;
-  transition: border-bottom 0.2s ease-out;
+  transition: color border-bottom 0.2s ease-out;
 }
 
 p {
