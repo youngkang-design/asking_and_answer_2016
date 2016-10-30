@@ -1,5 +1,8 @@
 ---
 ---
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
 *{
   box-sizing: border-box;
 }
@@ -11,7 +14,7 @@ $grey-9: #212529;
 
 body {
   background-color: $grey-8;
-  font-family: spoqahansans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: spoqahansans, Lato, "Noto Sans KR", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size:16px;
   line-height: 1.6em;
   color:#727272;
